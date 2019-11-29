@@ -321,6 +321,7 @@ footer .okvir {
 	}
 	.okvir h1 {
 	font-size: 35px;
+	margin-left: 0px;
 	}
 	.header {
 		height: 60px;
@@ -331,6 +332,12 @@ footer .okvir {
 	}
 	main {
 		top: 60px;
+	}
+	.content {
+		padding-top: 30px;
+	}
+	.tekst {
+	margin: 0px 30px;
 	}
 	footer {
 		margin-top: 60px;
