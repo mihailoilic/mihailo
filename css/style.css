@@ -72,6 +72,7 @@ body {
 	display: none;
 	width: 90px;
 	position: relative;
+	font-size: 18px;
 }
 .vsadrzaj {
 	display: none;
@@ -85,6 +86,10 @@ body {
 }
 .vsadrzaj ul {
 	text-align: center;
+}
+.vsadrzaj ul li {
+	font-size: 16px;
+	padding: 5px;
 }
 .vmeni:hover .vsadrzaj {
   display: block;
@@ -310,12 +315,24 @@ footer .okvir {
 		display: block;
 	}
 }
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 750px){
 	.okvir {
 		width: 90%;
 	}
 	.okvir h1 {
-	font-size: 40px;
+	font-size: 30px;
+	}
+	.header {
+		height: 60px;
+	}
+	.logo img {
+		height: 40px;
+	}
+	main {
+		top: 60px;
+	}
+	footer {
+		margin-top: 60px;
 	}
 }
 @media only screen and (min-width: 1600px){
