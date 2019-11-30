@@ -216,15 +216,18 @@ main {
 }
 /* GALERIJA SADRZAJ */
 .galerija {
-	padding: 0px 10px;
+	padding: 0px 20px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 .slika {
-	margin: 45px;
-	
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slika img {
 	width: 350px;
