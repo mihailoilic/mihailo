@@ -17,6 +17,16 @@ ul {
 body {
 	background-color: #ddd;
 }
+h2 {
+	color: #943444;
+	font-weight: 400;
+}
+h1 {
+	margin-left: 20px;
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 3px 3px 10px #000, 2px 2px 5px #000;
+}
 /* HEADER */
 .header {
 	position: fixed;
@@ -148,12 +158,6 @@ main {
 			filter: none;
 		}
 }
-.okvir h1 {
-	margin-left: 20px;
-	color: #fff;
-	font-size: 50px;
-	text-shadow: 3px 3px 10px #000, 2px 2px 5px #000;
-}
 /* SADRZAJ */
 .content {
 	background: rgba(250,250,250,0.85);
@@ -165,11 +169,7 @@ main {
 	box-sizing: border-box;
 }  
 .tekst {
-	margin: 0px 50px;
-}
-.tekst h2 {
-	color: #943444;
-	font-weight: 400;
+	padding: 0px 50px;
 }
 .tekst h3 {
 	font-weight: 400;
@@ -182,9 +182,6 @@ main {
 }
 .tekst a {
 	font-weight: 600;
-}
-.distanca {
-	margin-bottom: 100px;
 }
 /* SADRZAJ INDEX */
 .ponuda {
@@ -213,6 +210,21 @@ main {
 .ponuda figcaption{
 	padding-bottom: 6px;
 	text-align: center;
+}
+/* SADRZAJ O NAMA */
+.video {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+}
+.video video {
+	width: 500px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.video video:focus {
+	outline: none;
+	
 }
 /* GALERIJA SADRZAJ */
 .galerija {
@@ -254,6 +266,81 @@ main {
 		height: 400px;
 		filter: saturate(100%);
 	}
+}
+/* SADRZAJ KONTAKT */
+.kontakt {
+	padding: 0px 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.info {
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+.info li {
+	display: flex;
+	margin: 10px 0px;
+}
+.info li span {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.info img {
+	margin-top: 30px;
+	border-radius: 5px;
+	width: 300px;
+}
+.forma table {
+	font-size: 12px;
+	width: 300px;
+}
+.forma td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.forma input[type="text"], .forma input[type="email"], .forma select {
+	width: 300px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(116,25,45, 0.4);
+	
+}
+.forma input[type="text"]:focus, .forma input[type="email"]:focus, .forma select:focus {
+	border-bottom: 1px solid #8d021f;
+	outline: none;
+}
+.required {
+	color: #8d021f;
+}
+.poruka {
+	width: 300px;
+	height: 100px;
+	background: none;
+	border:  1px solid rgba(116,25,45, 0.4);
+}
+.poruka:focus {
+	border:  1px solid #8d021f;
+	outline: none;
+}
+.bwrapper {
+	display: flex;
+	justify-content: center;
+}
+.button {
+	width: 80px;
+	padding: 3px;
+	margin: 0px 5px;
+	background-color: #9e4252;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+.button:hover {
+	background-color:#8d021f;
+	cursor: pointer;
 }
 /* FOOTER */
 footer {
@@ -322,7 +409,7 @@ footer .okvir {
 	.okvir {
 		width: 90%;
 	}
-	.okvir h1 {
+	h1 {
 	font-size: 35px;
 	margin-left: 0px;
 	}
@@ -340,10 +427,14 @@ footer .okvir {
 		padding-top: 30px;
 	}
 	.tekst {
-	margin: 0px 30px;
+	padding: 0px 30px;
+	
 	}
 	footer {
 		margin-top: 60px;
+	}
+	.video video {
+		width: 300px;
 	}
 }
 @media only screen and (min-width: 1600px){

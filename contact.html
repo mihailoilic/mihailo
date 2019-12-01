@@ -4,6 +4,7 @@
 		<title>MONTANA INVEST - NA PRAVOM STE MESTU!</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="author" content="Mihailo Ilic"/>
@@ -67,14 +68,87 @@
 			<div class="okvir">
 				<h1>Obratite nam se</h1>
 				<div class="content">
-					<section class="tekst">
-						<article>
+					<section class="kontakt">
+						<article class="info">
 							<header>
-								<h2>Potreban vam je novi, lepši ili drugačiji dom?</h2>
+								<h2>Kontakt informacije</h2>
 							</header>
-							<p>Svojim fdfdds iskustvom garantujemo ostvarivanje vaših želja. Vodimo računa o svim aspektima za vaše potpuno uživanje. Mi ne pravimo kompromise, što dokazuje i kvalitet naših prepoznatljivih objekata na dobrim gradskim lokacijama. Na pravom ste mestu!</p>
-							<p>Pored funkcionalnosti, nastojimo da zadovoljimo i najviše estetske kriterijume. Predlažemo vam da posetite našu <a href="gallery.html">galeriju</a>.</p>
-							<p>Za sve informacije obratite nam se putem <a href="contact.html">kontakt</a> stranice.</p>
+							<ul>
+								<li>
+									<span class="fa fa-map-marker"></span>
+									Bulevar kralja Aleksandra bb<br/>
+									11000 Beograd
+								</li>
+								<li>
+									<span class="fa fa-phone"></span>+381 11 1234567
+								</li>
+								<li>
+									<span class="fa fa-envelope"></span>
+									<a href="mailto:prodaja@montana.rs">prodaja&#64;montana&#46;rs</a>
+								</li>
+								<li>
+									
+								</li>
+							</ul>
+							<img src="img/bulevar.jpg" alt="bulevar" />
+						</article>
+						<article class="forma">
+							<header>
+								<h2>Pišite nam</h2>
+							</header>
+							<form action="" method="POST" name="kontaktforma">
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<label for="tbIme">Vaše ime:</label><span class="required">*</span><br/>
+												<input type="text" name="tbIme" placeholder="Ovde unesite vaše ime i prezime" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="tbEmail">Vaš e-mail:</label><span class="required">*</span><br/>
+												<input type="email" name="tbEmail" placeholder="Ovde unesite vašu e-mail adresu" value="" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="selOcena">Ocenite vaše dosadašnje iskustvo sa nama:</label><br/>
+												<select name="selOcena">
+													<option value="0">Izaberite jednu od opcija...</option>
+													<option value="1">Veoma loše</option>
+													<option value="2">Loše</option>
+													<option value="3">Dobro</option>
+													<option value="4">Vrlo dobro</option>
+													<option value="5">Odlično</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="rTip">Izaberite tip poruke:</label><span class="required">*</span><br/>
+												<input type="radio" name="rTip" value="pitanje" checked="checked"/>Pitanje u vezi sa prodajom<br/>
+												<input type="radio" name="rTip" value="sugestije" />Sugestije, pohvale, kritike...<br/>
+												<input type="radio" name="rTip" value="drugo" />Drugo
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<label for="poruka">Vaša poruka:</label><span class="required">*</span><br/>
+												<textarea name="poruka" class="poruka"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="bwrapper">
+													<button type="submit" name="btn1" class="button">Pošalji</button>
+													<button type="reset" name="btn2" class="button">Poništi</button>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
 						</article>
 					</section>
 					
