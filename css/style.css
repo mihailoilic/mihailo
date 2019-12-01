@@ -27,6 +27,11 @@ h1 {
 	font-size: 50px;
 	text-shadow: 3px 3px 10px #000, 2px 2px 5px #000;
 }
+h3 {
+	font-weight: 400;
+	color: #943444;
+	font-size: 16px;
+}
 /* HEADER */
 .header {
 	position: fixed;
@@ -35,7 +40,7 @@ h1 {
 	z-index: 10;
 	height: 80px;
 	width: 100%;
-	background-color: #fafafa;
+	background-color: #fff;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 	display: flex;
 	justify-content: space-between;
@@ -170,11 +175,6 @@ main {
 }  
 .tekst {
 	padding: 0px 50px;
-}
-.tekst h3 {
-	font-weight: 400;
-	color: #943444;
-	font-size: 16px;
 }
 .tekst p {
 	margin-bottom: 30px;
@@ -317,6 +317,7 @@ main {
 }
 .poruka {
 	width: 300px;
+	max-width: 300px;
 	height: 100px;
 	background: none;
 	border:  1px solid rgba(116,25,45, 0.4);
@@ -341,6 +342,32 @@ main {
 .button:hover {
 	background-color:#8d021f;
 	cursor: pointer;
+}
+/* SADRZAJ AUTOR */
+.autor {
+	padding: 0px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.autor figure {
+	width: 200px;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin: 20px;
+}
+.autor figcaption {
+	background-color: none;
+	text-align: center;
+	padding-bottom: 5px;
+}
+.autor img {
+	width: 200px;
+	border-radius: 5px 5px 0px 0px;
+}
+.atekst {
+	width: 500px;
 }
 /* FOOTER */
 footer {
@@ -418,7 +445,7 @@ footer .okvir {
 		padding: 0px 5%;
 	}
 	.logo img {
-		height: 35px;
+		height: 40px;
 	}
 	main {
 		top: 60px;
@@ -426,9 +453,11 @@ footer .okvir {
 	.content {
 		padding-top: 30px;
 	}
-	.tekst {
+	.tekst, .kontakt, .autor {
 	padding: 0px 30px;
-	
+	}
+	.kontakt {
+		justify-content: center;
 	}
 	footer {
 		margin-top: 60px;
