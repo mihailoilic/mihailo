@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>Montana - vesti</title>
+	<link>https://mihailoilic.github.io/mihailo/</link>
+	<description>Montana Invest - Na pravom ste mestu!</description>
+	
+	<item>
+		<title>Ko smo mi?</title>
+		<link>https://mihailoilic.github.io/mihailo/about.html</link>
+		<description>Informišite se bolje o nama. Uvek je važno je znati ko je na vašoj strani.</description>
+	</item>
+	<item>
+		<title>Naša galerija</title>
+		<link>https://mihailoilic.github.io/mihailo/gallery.html</link>
+		<description>Pogledajte našu galeriju što pre! Delić inspiracije nikome ne bi škodio.</description>
+	</item>
+</channel>
+</rss>
