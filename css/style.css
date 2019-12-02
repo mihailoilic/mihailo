@@ -144,10 +144,10 @@ main {
 	background-image: url("../img/author.jpg");
 }
 .okvir {
-	padding-top: 100px;
+	padding-top: 150px;
 	width: 80%;
 	margin: 0px auto;
-	animation: animacija 0.6s;
+	animation: animacija 0.6s ease-in-out;
 }
 @keyframes animacija{
 	0% { 
@@ -248,28 +248,17 @@ main {
 	object-fit: cover;
 	filter: saturate(0%);
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	transition: width 0.2s, height 0.2s, filter 0.5s;
 }
 .slika img:hover {
-	animation: zoom 0.5s;
 	width: 400px;
 	height: 400px;
 	filter: saturate(100%);
 }
-@keyframes zoom {
-	0% {
-		filter: saturate(0%);
-		width: 350px;
-		height: 350px;
-	}
-	100% {
-		width: 400px;
-		height: 400px;
-		filter: saturate(100%);
-	}
-}
+
 /* SADRZAJ KONTAKT */
 .kontakt {
-	padding: 0px 50px;
+	padding: 0px 100px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -355,7 +344,7 @@ main {
 	background-color: #fff;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	margin: 20px;
+	margin: 40px;
 }
 .autor figcaption {
 	background-color: none;
@@ -368,6 +357,12 @@ main {
 }
 .atekst {
 	width: 500px;
+}
+.atekst h2{
+	margin-top: 30px;
+}
+.atekst p {
+	text-align: justify;
 }
 /* FOOTER */
 footer {
