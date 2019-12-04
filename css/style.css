@@ -15,7 +15,7 @@ ul {
 	list-style-type: none;
 }
 body {
-	background-color: #ddd;
+	background-color: #e2e2e2;
 }
 h2 {
 	color: #943444;
@@ -107,7 +107,7 @@ main {
 	position: relative;
 	top: 80px;
 	width: 100%;
-	z-index: 2;		
+	z-index: 2;
 }
 .bg {
 	position: absolute;
@@ -135,8 +135,9 @@ main {
 	background-image: url("../img/author.jpg");
 }
 .okvir {
-	padding-top: 70px;
-	width: 80%;
+	position: relative;
+	top: 70px;
+	width: 75%;
 	margin: 0px auto;
 	animation: animacija 0.6s ease-in-out;
 }
@@ -156,7 +157,7 @@ main {
 }
 /* SADRZAJ */
 .content {
-	background: rgba(250,250,250,0.80);
+	background: rgba(250,250,250,0.8);
 	width: 100%;
 	min-height: 500px;
 	border-radius: 5px;
@@ -214,7 +215,6 @@ main {
 }
 .video video:focus {
 	outline: none;
-	
 }
 /* GALERIJA SADRZAJ */
 .galerija {
