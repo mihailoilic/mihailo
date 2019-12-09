@@ -33,7 +33,7 @@ h3 {
 	font-size: 16px;
 }
 /* HEADER */
-.header {
+#header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -48,41 +48,41 @@ h3 {
 	padding: 0px 12%;
 	box-sizing: border-box;
 }
-.logo img {
+#logo img {
 	height: 60px;
 }
-.logo img:hover {
+#logo img:hover {
 	filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
 }
-.meni ul {
+#meni ul {
 	height: 80px;
 	display: flex;
 	align-items: center;
 }
-.meni ul li {
+#meni ul li {
 	width: 90px;
 	margin: 5px;
 	border-radius: 5px;
 	text-align: center;
 }
-.meni ul li a, .vsadrzaj ul li a{
+#meni ul li a, #vsadrzaj ul li a{
 	text-decoration: none;
 	color: #252525;
 }
-.meni ul li a.active, .vsadrzaj ul li a.active{
+#meni ul li a.active, #vsadrzaj ul li a.active{
 	color: #8d021f;
 }
-.meni ul li:hover, .vsadrzaj ul li:hover{
+#meni ul li:hover, #vsadrzaj ul li:hover{
 	background-color: #ddd;
 }
 /* RESPONSIVE VERTIKALNI MENI */
-.vmeni{
+#vmeni{
 	display: none;
 	width: 60px;
 	position: relative;
 	font-size: 20px;
 }
-.vsadrzaj {
+#vsadrzaj {
 	display: none;
 	position: absolute;
 	left: -40px;
@@ -92,14 +92,14 @@ h3 {
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
 	border-radius: 5px;
 }
-.vsadrzaj ul {
+#vsadrzaj ul {
 	text-align: center;
 }
-.vsadrzaj ul li {
+#vsadrzaj ul li {
 	font-size: 16px;
 	padding: 5px;
 }
-.vmeni:hover .vsadrzaj {
+#vmeni:hover #vsadrzaj {
   display: block;
 }
 /* OKVIR */
@@ -129,19 +129,19 @@ main {
 		filter: none;
 	}
 }
-.bg.home{
+.bg#home{
 	background-image: url("../img/home.jpg");
 }
-.bg.about{
+.bg#about{
 	background-image: url("../img/about.jpg");
 }
-.bg.gallery{
+.bg#gallery{
 	background-image: url("../img/gallery.jpg");
 }
-.bg.contact{
+.bg#contact{
 	background-image: url("../img/contact.jpg");
 }
-.bg.author{
+.bg#author{
 	background-image: url("../img/author.jpg");
 }
 .okvir {
@@ -170,7 +170,7 @@ main {
 	width: 65%;
 }
 /* SADRZAJ */
-.content {
+#content {
 	background: rgba(250,250,250,0.85);
 	width: 100%;
 	min-height: 500px;
@@ -178,6 +178,7 @@ main {
 	padding: 50px 0px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	box-sizing: border-box;
+	z-index: 2;
 } 
 .tekst {
 	padding: 0px 50px;
@@ -190,50 +191,50 @@ main {
 	font-weight: 600;
 }
 /* SADRZAJ INDEX */
-.ponuda {
+#ponuda {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0px 20px;
 }
-.ponuda a {
+#ponuda a {
 	color: #252525;
 	margin: 20px;
 }
-.ponuda article {
+#ponuda article {
 	background-color: #fafafa;
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	transition: box-shadow 0.2s;
 }
-.ponuda article:hover {
+#ponuda article:hover {
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.6);
 }
-.ponuda img {
+#ponuda img {
 	border-radius: 5px 5px 0px 0px;
 	height: 200px;
 }
-.ponuda figcaption{
+#ponuda figcaption{
 	padding-bottom: 6px;
 	text-align: center;
 }
 /* SADRZAJ O NAMA */
-.video {
+#video {
 	display: flex;
 	justify-content: center;
 	margin: 20px 0px;
 }
-.video video {
+#video video {
 	width: 500px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
-.video video:focus {
+#video video:focus {
 	outline: none;
 }
 /* GALERIJA SADRZAJ */
-.galerija {
+#galerija {
 	padding: 0px 20px;
 	display: flex;
 	flex-direction: row;
@@ -241,10 +242,10 @@ main {
 	flex-wrap: wrap;
 }
 .slika {
-	position: relative;
 	width: 400px;
 	height: 400px;
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 }
@@ -262,26 +263,26 @@ main {
 	height: 400px; 
 	filter: saturate(100%);
 }
-.slika img:hover + .oceni {
+.slika img:hover + .ocena {
 	display: flex;
 }
-.oceni {
+
+.ocena {
 	display: none;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	bottom: 0px;
+	bottom: 4px;
 	width: 100%;
 	height: 35px;
-	z-index: 2;
 	border-radius: 0px 0px 5px 5px;
 	animation: oceni 1s;
-	background: rgba(200,200,200,0.05);
+	background: rgba(0,0,0,0.4);
 	backdrop-filter: blur(2px);
 	color: #fff;
 	pointer-events: none;
 }
-.oceni span {
+.ocena span {
 	color: #ba0000;
 	margin: 5px;
 }
@@ -294,25 +295,25 @@ main {
 	}
 }
 /* SADRZAJ KONTAKT */
-.kontakt {
+#kontakt {
 	padding: 0px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-.info {
+#info {
 	margin-bottom: 40px;
 	margin-right: 40px;
 }
-.info li {
+#info li {
 	display: flex;
 	margin: 10px 0px;
 }
-.info li span {
+#info li span {
 	margin-top: 5px;
 	margin-right: 10px;
 }
-.mapa {
+#mapa {
 	animation: mapa 1.7s;
 	background-image: url("../img/loading.gif");
 	background-position: center;
@@ -338,39 +339,39 @@ main {
 		opacity: 100%;
 	}
 }
-.forma table {
+#forma table {
 	font-size: 12px;
 	width: 300px;
 }
-.forma td {
+#forma td {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.forma input[type="text"], .forma input[type="email"], .forma select {
+#forma input[type="text"], #forma input[type="email"], #forma select {
 	width: 300px;
 	background: none;
 	border: none;
 	border-bottom: 1px solid rgba(116,25,45, 0.4);
 }
-.forma input[type="text"]:focus, .forma input[type="email"]:focus, .forma select:focus {
+#forma input[type="text"]:focus, #forma input[type="email"]:focus, #forma select:focus {
 	border-bottom: 1px solid #8d021f;
 	outline: none;
 }
 .required {
 	color: #8d021f;
 }
-.poruka {
+#poruka {
 	width: 300px;
 	max-width: 300px;
 	height: 100px;
 	background: none;
 	border:  1px solid rgba(116,25,45, 0.4);
 }
-.poruka:focus {
+#poruka:focus {
 	border:  1px solid #8d021f;
 	outline: none;
 }
-.bwrapper {
+#bwrapper {
 	display: flex;
 	justify-content: center;
 }
@@ -388,35 +389,34 @@ main {
 	cursor: pointer;
 }
 /* SADRZAJ AUTOR */
-.autor {
+#autor {
 	padding: 0px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.autor figure {
+#autor figure {
 	width: 200px;
 	background-color: #fff;
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	border-radius: 5px;
 	margin: 40px;
 }
-.autor figcaption {
-	background-color: none;
+#autor figcaption {
 	text-align: center;
 	padding-bottom: 5px;
 }
-.autor img {
+#autor img {
 	width: 200px;
 	border-radius: 5px 5px 0px 0px;
 }
-.atekst {
+#atekst {
 	width: 500px;
 }
-.atekst h2{
+#atekst h2{
 	margin-top: 30px;
 }
-.atekst p {
+#atekst p {
 	text-align: justify;
 }
 /* FOOTER */
@@ -434,52 +434,52 @@ footer .okvir {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.social ul {
+#social ul {
 	display: flex;
 	justify-content: center;
 }
-.social ul li{
+#social ul li{
 	margin: 0px 10px;
 }
-.social img {
+#social img {
 	width: 24px;
 }
-.social img:hover{
+#social img:hover{
 	transform: scale(1.2,1.2);
 }
-.social p {
+#social p {
 	margin: 15px 0px;
 	text-align: center;
 	font-size: 14px;
 }
-.fmeni {
+#fmeni {
 	text-align: center;
 }
-.fmeni ul {
+#fmeni ul {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 }
-.fmeni ul li {
+#fmeni ul li {
 	margin-right: 5px;
 	padding: 0px 5px;
 	border-radius: 5px;
 	font-size: 14px;
 }
-.fmeni img {
+#fmeni img {
 	margin: 7px 3px 0px 2px;
 	width: 24px;
 }
-.fmeni ul li:hover {
+#fmeni ul li:hover {
 	background-color: #bbb;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 700px){
-	.meni {
+	#meni {
 		display: none;
 	}
-	.vmeni {
+	#vmeni {
 		display: block;
 	}
 }
@@ -491,29 +491,29 @@ footer .okvir {
 	font-size: 35px;
 	margin-left: 0px;
 	}
-	.header {
+	#header {
 		height: 60px;
 		padding: 0px 5%;
 	}
-	.logo img {
+	#logo img {
 		height: 40px;
 	}
 	main {
 		top: 60px;
 	}
-	.content {
+	#content {
 		padding-top: 30px;
 	}
-	.tekst, .kontakt, .autor {
+	.tekst, #kontakt, #autor {
 	padding: 0px 30px;
 	}
-	.kontakt {
+	#kontakt {
 		align-items: center;
 	}
-	.info {
+	#info {
 		margin: 0px;
 	}
-	.mapa {
+	#mapa {
 		width: 300px;
 	}
 	footer {
@@ -522,7 +522,7 @@ footer .okvir {
 	footer .okvir {
 		justify-content: center;
 	}
-	.video video {
+	#video video {
 		width: 300px;
 	}
 }
