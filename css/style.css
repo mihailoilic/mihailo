@@ -258,12 +258,12 @@ main {
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	transition: width 0.2s, height 0.2s, filter 0.5s;
 }
-.slika img:hover {
+.slika a:hover img {
 	width: 400px;
 	height: 400px; 
 	filter: saturate(100%);
 }
-.slika img:hover + .ocena {
+.slika a:hover .ocena {
 	display: flex;
 }
 
@@ -277,14 +277,16 @@ main {
 	height: 35px;
 	border-radius: 0px 0px 5px 5px;
 	animation: oceni 1s;
-	background: rgba(50,50,50,0.2);
+	background: rgba(30,30,30,0.2);
 	backdrop-filter: blur(2px);
 	color: #fff;
-	pointer-events: none;
 }
-.ocena span {
+.ocena span{
 	color: #ba0000;
 	margin: 5px;
+}
+.ocena span:hover{
+	transform: scale(1.3,1.3);
 }
 @keyframes oceni {
 	0% {
