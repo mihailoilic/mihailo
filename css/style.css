@@ -179,6 +179,7 @@ main {
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 	box-sizing: border-box;
 	z-index: 2;
+	filter: blur(0px);
 } 
 .tekst {
 	padding: 0px 50px;
