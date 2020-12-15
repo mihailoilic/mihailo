@@ -163,7 +163,7 @@ main {
 	}
 	100% {  
 			transform: scale(1,1);
-			filter: blur(0px);
+			filter: opacity(100%) brightness(100%) blur(0px);
 	}
 }
 .smanjeni {
